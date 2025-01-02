@@ -9,7 +9,8 @@ This project is a companion for the game "Dead by daylight" designed to help kil
 - Game Timer
 
 ### Figma Concept
-![maxresdefault 1](https://github.com/user-attachments/assets/e9277fd7-08b2-49da-bc43-f5b2e4ba7316)
+![Game](https://github.com/user-attachments/assets/5335974d-18df-4fe2-a66b-ab2888f45531)
+
 
 ### Improvements to work:
 - Undo hook counter
