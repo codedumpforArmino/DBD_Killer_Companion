@@ -66,10 +66,68 @@ namespace DBD_Killer_Companion
                 int index = Array.IndexOf(pb_Players, clicked_PictureBox);
                 if (index != -1 && HookTracker[index] < 2)
                 {
-                    pb_HookCounters[index * 2 + HookTracker[index]].Image = Properties.Resources.image_6;
-
-                    HookTracker[index]++;
+                    updateTracker(index);
                 }
+            }
+        }
+
+        private void KeyController(object sender, KeyEventArgs e)
+        {
+            Debug.WriteLine("test");
+            if (e.KeyCode == Keys.Q && onGame == true)
+            {
+                updateTracker(0);
+            }
+            else if (e.KeyCode == Keys.W && onGame == true)
+            {
+                updateTracker(1);
+            }
+            else if (e.KeyCode == Keys.E && onGame == true)
+            {
+                updateTracker(2);
+            }
+            else if (e.KeyCode == Keys.R && onGame == true)
+            {
+                updateTracker(3);
+            }
+            else if (e.KeyCode == Keys.A && onGame == true)
+            {
+                revertTracker(0);
+            }
+            else if (e.KeyCode == Keys.S && onGame == true)
+            {
+                revertTracker(1);
+            }
+            else if (e.KeyCode == Keys.D && onGame == true)
+            {
+                revertTracker(2);
+            }
+            else if (e.KeyCode == Keys.F && onGame == true)
+            {
+                revertTracker(3);
+            }
+            else if(e.KeyCode == Keys.Space)
+            {
+                btn_Timer_Click(sender, e);
+            }
+            else if(e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
+
+        private void updateTracker(int index)
+        {
+            pb_HookCounters[index * 2 + HookTracker[index]].Image = Properties.Resources.image_6;
+            HookTracker[index]++;
+        }
+
+        private void revertTracker(int index)
+        {
+            if (HookTracker[index] > 0)
+            {
+                pb_HookCounters[index * 2 + HookTracker[index] - 1].Image = Properties.Resources.image_5;
+                HookTracker[index]--;
             }
         }
 
@@ -85,6 +143,7 @@ namespace DBD_Killer_Companion
 
 
                 timer1.Stop();
+                txtbox_timer.BackColor = SystemColors.Control;
                 onGame = false;
             }
             else
@@ -100,6 +159,7 @@ namespace DBD_Killer_Companion
                 btn_Timer.Text = "STOP";
                 timer1.Start();
                 initializeMain();
+                txtbox_timer.BackColor = SystemColors.HighlightText;
                 onGame = true;
             }
         }
@@ -131,13 +191,18 @@ namespace DBD_Killer_Companion
         {
             second++;
 
-            if(second >= 60)
+            if (second >= 60)
             {
                 minute++;
                 second = 0;
             }
 
             txtbox_timer.Text = translate_timer(minute, second);
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            Debug.WriteLine("test");
         }
     }
 }

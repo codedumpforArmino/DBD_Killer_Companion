@@ -86,6 +86,7 @@
             btn_Timer.Name = "btn_Timer";
             btn_Timer.Size = new Size(112, 34);
             btn_Timer.TabIndex = 0;
+            btn_Timer.TabStop = false;
             btn_Timer.Text = "START";
             btn_Timer.UseVisualStyleBackColor = true;
             btn_Timer.Click += btn_Timer_Click;
@@ -261,6 +262,7 @@
             txtbox_timer.BorderStyle = BorderStyle.FixedSingle;
             txtbox_timer.Location = new Point(51, 426);
             txtbox_timer.Name = "txtbox_timer";
+            txtbox_timer.ReadOnly = true;
             txtbox_timer.Size = new Size(150, 31);
             txtbox_timer.TabIndex = 2;
             txtbox_timer.Text = "00 : 00";
@@ -276,9 +278,12 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(253, 544);
+            ControlBox = false;
             Controls.Add(tableLayoutPanel1);
+            KeyPreview = true;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Killer Companion";
+            KeyUp += KeyController;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tblPanel_Survivors.ResumeLayout(false);
