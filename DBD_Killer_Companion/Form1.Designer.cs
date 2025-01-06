@@ -153,44 +153,53 @@
             // 
             // pb_Survivor4
             // 
+            pb_Survivor4.Anchor = AnchorStyles.Top;
             pb_Survivor4.Cursor = Cursors.Hand;
             pb_Survivor4.Enabled = false;
             pb_Survivor4.Location = new Point(3, 291);
             pb_Survivor4.Name = "pb_Survivor4";
             pb_Survivor4.Size = new Size(85, 90);
+            pb_Survivor4.SizeMode = PictureBoxSizeMode.StretchImage;
             pb_Survivor4.TabIndex = 2;
             pb_Survivor4.TabStop = false;
             pb_Survivor4.Click += btn_Survivor_Click;
             // 
             // pb_Survivor1
             // 
+            pb_Survivor1.Anchor = AnchorStyles.Top;
             pb_Survivor1.Cursor = Cursors.Hand;
             pb_Survivor1.Enabled = false;
+            pb_Survivor1.InitialImage = null;
             pb_Survivor1.Location = new Point(3, 3);
             pb_Survivor1.Name = "pb_Survivor1";
             pb_Survivor1.Size = new Size(85, 90);
+            pb_Survivor1.SizeMode = PictureBoxSizeMode.StretchImage;
             pb_Survivor1.TabIndex = 0;
             pb_Survivor1.TabStop = false;
             pb_Survivor1.Click += btn_Survivor_Click;
             // 
             // pb_Survivor2
             // 
+            pb_Survivor2.Anchor = AnchorStyles.Top;
             pb_Survivor2.Cursor = Cursors.Hand;
             pb_Survivor2.Enabled = false;
             pb_Survivor2.Location = new Point(3, 99);
             pb_Survivor2.Name = "pb_Survivor2";
             pb_Survivor2.Size = new Size(85, 90);
+            pb_Survivor2.SizeMode = PictureBoxSizeMode.StretchImage;
             pb_Survivor2.TabIndex = 1;
             pb_Survivor2.TabStop = false;
             pb_Survivor2.Click += btn_Survivor_Click;
             // 
             // pb_Survivor3
             // 
+            pb_Survivor3.Anchor = AnchorStyles.Top;
             pb_Survivor3.Cursor = Cursors.Hand;
             pb_Survivor3.Enabled = false;
             pb_Survivor3.Location = new Point(3, 195);
             pb_Survivor3.Name = "pb_Survivor3";
             pb_Survivor3.Size = new Size(85, 90);
+            pb_Survivor3.SizeMode = PictureBoxSizeMode.StretchImage;
             pb_Survivor3.TabIndex = 3;
             pb_Survivor3.TabStop = false;
             pb_Survivor3.Click += btn_Survivor_Click;

@@ -27,9 +27,13 @@ namespace DBD_Killer_Companion
 
             pb_Players = new PictureBox[4];
             pb_Players[0] = pb_Survivor1;
+            pb_Survivor1.Image = Properties.Resources.chromakey;
             pb_Players[1] = pb_Survivor2;
+            pb_Survivor2.Image = Properties.Resources.chromakey;
             pb_Players[2] = pb_Survivor3;
+            pb_Survivor3.Image = Properties.Resources.chromakey;
             pb_Players[3] = pb_Survivor4;
+            pb_Survivor4.Image = Properties.Resources.chromakey;
 
             initializeHookCounters();
         }
@@ -65,7 +69,6 @@ namespace DBD_Killer_Companion
                     pb_HookCounters[index * 2 + HookTracker[index]].Image = Properties.Resources.image_6;
 
                     HookTracker[index]++;
-                    MessageBox.Show($"Survivor {index}: {HookTracker[index]}");
                 }
             }
         }
