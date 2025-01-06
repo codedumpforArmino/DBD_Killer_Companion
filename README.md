@@ -13,9 +13,9 @@ This project is a companion for the game "Dead by daylight" designed to help kil
 
 
 ### Improvements to work:
-- Undo hook counter
-- wider app? for easy dragging
-- UI indicator for active state
+- ~~Undo hook counter~~
+- ~~wider app? for easy dragging~~
+- ~~UI indicator for active state~~
 
 ### Contributions & Questions
 Feel free to contribute however you like or even use my project as an inspiration!
