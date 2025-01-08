@@ -1,7 +1,7 @@
 # DBD Killer COmpanion App
 
 ### About this Project
-This project is a companion for the game "Dead by daylight" designed to help killers in the game be aware of the hook state of each survivors. This app is simply built with windows forms.
+This project is a companion for the game "Dead by daylight" designed to help killers in the game be aware of the hook state of each survivors. This app is simply built with windows forms. You can dowload the app [here](https://github.com/codedumpforArmino/DBD_Killer_Companion/releases/tag/v1.1.0)
 
 ### Features
 - Streamer Friendly
